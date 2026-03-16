@@ -14,6 +14,7 @@ const main = async () => {
         if(event.type !== "VEVENT") continue;
         const start = new Date(event.start);
         const minsUntil = (start - now) / 1000 / 60;
+        console.log(minsUntil);
 
         if(minsUntil >= 55 && minsUntil <= 55 + WINDOW_MINUTES){
             const timeString = start.toLocaleTimeString(
