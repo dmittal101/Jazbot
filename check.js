@@ -12,7 +12,6 @@ const main = async () => {
 
     for(const event of Object.values(events)){
         if(event.type !== "VEVENT") continue;
-        console.log(event);
         const start = new Date(event.start);
         const minsUntil = (start - now) / 1000 / 60;
 
