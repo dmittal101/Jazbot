@@ -16,7 +16,7 @@ const main = async () => {
         const minsUntil = (start - now) / 1000 / 60;
         console.log(minsUntil);
 
-        if(minsUntil >= 55 && minsUntil <= 55 + WINDOW_MINUTES){
+        if(minsUntil >= 50 && minsUntil <= 50 + WINDOW_MINUTES){
             const timeString = start.toLocaleTimeString(
                 "en-US",
                 {
