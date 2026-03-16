@@ -32,7 +32,7 @@ const main = async () => {
                     body: JSON.stringify({
                         content: `🕺 **Dance Practice Reminder!**\n` +
                                  `**${event.summary}** starts in about 1 hour at **${timeString}**!\n` +
-                                 (event.location ? `📍 ${event.location}` : '')
+                                 (event.location ? `@📍 ${event.location}` : '')
                     })
                 }
             );
