@@ -31,7 +31,7 @@ const main = async () => {
                     method: "POST",
                     headers: {"Content-Type": "application/json"},
                     body: JSON.stringify({
-                        content: `🕺 **Dance Practice Reminder!**\n` +
+                        content: `🕺 **Reminder for all Members!**\n` +
                                  `**${event.summary}** starts in about 1 hour at **${timeString}**!\n` +
                                  (event.location ? `@📍 ${event.location}` : '')
                     })
