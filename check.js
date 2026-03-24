@@ -26,14 +26,21 @@ const main = async () => {
                 }
             );
 
+            let title = "";
+            if(event.summary.toLowerCase().includes("ebm") || event.summary.toLowerCase().includes("eboard") || event.summary.lower.includes("e-board")){
+                title = "**Reminder for all E-Board Members! @Eboard Member**\n"
+            }
+            else{
+                title = "🕺 **Reminder for all Members! @everyone**\n"
+            }
             await fetch(WEBHOOK_URL,
                 {
                     method: "POST",
                     headers: {"Content-Type": "application/json"},
                     body: JSON.stringify({
-                        content: `🕺 **Reminder for all Members!** @everyone\n` +
+                        content: title +
                                  `**${event.summary}** starts in about 1 hour at **${timeString}**!\n` +
-                                 (event.location ? `@📍 ${event.location}` : '')
+                                 (event.location ? `@ ${event.location} 📍` : '')
                     })
                 }
             );
