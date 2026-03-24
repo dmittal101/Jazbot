@@ -27,7 +27,7 @@ const main = async () => {
             );
 
             let title = "";
-            if(event.summary.toLowerCase().includes("ebm") || event.summary.toLowerCase().includes("eboard") || event.summary.lower.includes("e-board")){
+            if(event.summary.toLowerCase().includes("ebm") || event.summary.toLowerCase().includes("eboard") || event.summary.toLowerCase().includes("e-board")){
                 title = "**Reminder for all E-Board Members! @Eboard Member**\n"
             }
             else{
