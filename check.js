@@ -40,7 +40,7 @@ const main = async () => {
                     body: JSON.stringify({
                         content: title +
                                  `**${event.summary}** starts in about 1 hour at **${timeString}**!\n` +
-                                 (event.location ? `@ ${event.location} 📍` : '')
+                                 (event.location ? `@ **${event.location}** 📍` : '')
                     })
                 }
             );
