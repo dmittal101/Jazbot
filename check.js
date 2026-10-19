@@ -40,7 +40,7 @@ const main = async () => {
                 minsUntil > 0
             );
         }
-        if(eventDate === todayDate && nyTime >= "15:40" && nyTime < "16:00" && minsUntil > 0){
+        if(eventDate === todayDate && nyTime >= "11:50" && nyTime < "12:10" && minsUntil > 0){
             const timeString = start.toLocaleTimeString(
                 "en-US",
                 {
