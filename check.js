@@ -27,7 +27,7 @@ const main = async () => {
         const todayDate = now.toLocaleDateString("en-CA", {
             timeZone: "America/New_York"
         });
-        if(eventDate === todayDate && nyTime > "11:50" && nyTime < "12:10" && minsUntil > 0){
+        if(eventDate === todayDate && nyTime > "2:50" && nyTime < "3:10" && minsUntil > 0){
             const timeString = start.toLocaleTimeString(
                 "en-US",
                 {
