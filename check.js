@@ -27,6 +27,19 @@ const main = async () => {
         const todayDate = now.toLocaleDateString("en-CA", {
             timeZone: "America/New_York"
         });
+        if(event.summary.includes("Test Event")){
+            console.log("EVENT:", event.summary);
+            console.log("NY TIME:", nyTime);
+            console.log("EVENT DATE:", eventDate);
+            console.log("TODAY DATE:", todayDate);
+            console.log("MINUTES UNTIL:", minsUntil);
+            console.log("CONDITION:", 
+                eventDate === todayDate &&
+                nyTime >= "15:20" &&
+                nyTime < "15:40" &&
+                minsUntil > 0
+            );
+        }
         if(eventDate === todayDate && nyTime >= "15:20" && nyTime < "15:40" && minsUntil > 0){
             const timeString = start.toLocaleTimeString(
                 "en-US",
