@@ -35,8 +35,8 @@ const main = async () => {
             console.log("MINUTES UNTIL:", minsUntil);
             console.log("CONDITION:", 
                 eventDate === todayDate &&
-                nyTime >= "15:20" &&
-                nyTime < "15:40" &&
+                nyTime >= "11:50" &&
+                nyTime < "12:10" &&
                 minsUntil > 0
             );
         }
